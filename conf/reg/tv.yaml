@@ -1,0 +1,2 @@
+type: ANISO_TV # regularization types: None, TV
+coeff: 0

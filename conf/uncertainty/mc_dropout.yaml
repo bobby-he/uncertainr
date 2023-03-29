@@ -1,0 +1,4 @@
+name: mc_dropout
+pdrop: 0.2
+num_baselearners: 1
+num_samples: 50

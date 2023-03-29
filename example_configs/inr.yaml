@@ -1,0 +1,48 @@
+command:
+- ${env}
+- ${interpreter}
+- ${program}
+- ${args_no_hyphens}
+method: grid
+name: 40dB_60view_NOmcd_FINAL
+metric:
+  name: snr
+  goal: maximize
+
+parameters:
+  name:
+    value: 40dB_60view_NOmcd_FINAL
+  data.scan_id:
+    values: 
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  data.n_views: 
+    value: 60
+  data.test_set:
+    value: True
+  num_epochs:
+    value: 15000
+  model.depth: 
+    value: 4
+  model.width: 
+    value: 200
+  model.omega_0:
+    value: 48
+  reg.coeff:
+    value: 0.05
+  reg.type:
+    value: ANISO_TV
+  opt.lr:
+    value: 3e-4
+  uncertainty.name:
+    value: ensemble
+  uncertainty.num_baselearners:
+    value: 5
+program: experiment_scripts/run_uncertainr.py
+project: aapm-deterministic

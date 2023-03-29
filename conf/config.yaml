@@ -1,0 +1,22 @@
+defaults:
+  - data: aapm_2d
+  - model: mlp
+  - uncertainty: mc_dropout
+  - opt: adam
+  - reg: tv
+  - job
+
+name: default
+run: 1
+seed: 5
+gpu: 0
+epochs_til_ckpt: 10000
+num_epochs: 1000
+steps_til_summary: 100
+save_last_ckpt: False
+dir_name: implicit-uncertainty
+paths:
+  repo: /data/ziz/not-backed-up/${env:USER}/${dir_name} # Change for your filesystem.
+  data: ${paths.repo}/data
+  plots_dir_name: plots
+  experiments: experiments

@@ -1,0 +1,46 @@
+command:
+- ${env}
+- ${interpreter}
+- ${program}
+- ${args_no_hyphens}
+method: grid
+name: gop_60_ckpt_final
+parameters:
+  data.scan_id:
+    values: 
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  data.test_set:
+    value: True
+  uncertainty:
+    values:
+    - hmc
+  model:
+    value: grid_of_pixels
+  data.n_views:
+    values:
+    - 60
+  model.use_checkpoint:
+    value: True
+  uncertainty.num_samples: 
+    values:
+    - 500
+  uncertainty.burn:
+    values:
+    - 500
+  reg.coeff:
+    values:
+    - 0.5
+  name:
+    value: aapm_gop_hmc_ckpt_final
+  run:
+    values: 
+      - 1
+program: experiment_scripts/run_hmc_numpyro.py
+project: aapm-hmc-numpyro

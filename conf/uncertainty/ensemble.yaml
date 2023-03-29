@@ -1,0 +1,4 @@
+name: ensemble
+num_baselearners: 10
+pdrop: 0
+num_samples: 50

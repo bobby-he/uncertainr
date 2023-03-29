@@ -1,0 +1,12 @@
+name: aapm_2d
+batch_size: 1
+out_dim: 1
+in_dim: 2
+scan_id: 0
+n_views: 120
+sidelength: 512
+view_batch_size: ${data.n_views}
+noise_sigma: 1e-2
+noise_snr_dB: 40
+test_set: False
+zero_pad: True

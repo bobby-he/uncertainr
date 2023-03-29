@@ -1,0 +1,12 @@
+name: shepp_2d
+batch_size: 1
+out_dim: 1
+in_dim: 2
+scan_id: 0
+n_views: 20
+sidelength: 256
+view_batch_size: ${data.n_views}
+noise_sigma: 0
+noise_snr_dB: 0
+test_set: False
+zero_pad: False

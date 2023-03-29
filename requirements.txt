@@ -1,0 +1,10 @@
+# jax # Check https://github.com/google/jax#installation for jax installation in your setup.
+torch==1.8.1
+torchvision==0.9.1
+phantominator==0.6.4
+wandb==0.14.0
+pytorch-lightning==0.8.5
+hydra-core==1.1.0
+numpyro[cuda] -f https://storage.googleapis.com/jax-releases/jax_releases.html
+dm-tree==0.1.5
+scipy==1.7.3

@@ -1,0 +1,55 @@
+command:
+- ${env}
+- ${interpreter}
+- ${program}
+- ${args_no_hyphens}
+method: grid
+name: inr_120_ckpt_final
+parameters:
+  data.scan_id:
+    values: 
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+  data.test_set:
+    value: True
+  uncertainty:
+    values:
+    - hmc
+  uncertainty.tau:
+    values:
+    - 0.15
+  data.n_views:
+    values:
+    - 120
+  model.use_checkpoint:
+    value: True
+  uncertainty.num_samples: 
+    values:
+    - 500
+  uncertainty.burn:
+    values:
+    - 500
+  model.width:
+    values:
+      - 200
+  model.depth:
+    values:
+      - 4
+  reg.coeff:
+    values:
+    - 0.03
+  name:
+    value: aapm_inr_hmc_ckpt_120_final
+  uncertainty.num_chains:
+    value: 2
+  run:
+    values: 
+      - 1
+program: experiment_scripts/run_hmc_numpyro.py
+project: aapm-hmc-numpyro-120-final

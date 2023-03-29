@@ -1,0 +1,7 @@
+name: hmc
+step_size: 0.0001
+num_samples:  1000
+burn: 500
+tau: 0.15
+num_chains: 1
+temp: 1

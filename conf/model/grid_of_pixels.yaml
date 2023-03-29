@@ -1,0 +1,7 @@
+name: grid_of_pixels
+model_type: gop
+width: 500
+depth: 1
+swa_mult: 0 # multiplier for Stochastic Weight Averaging
+use_checkpoint: False
+checkpoint_dir: ${paths.repo}/checkpoints

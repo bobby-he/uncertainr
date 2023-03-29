@@ -1,0 +1,12 @@
+name: mlp
+width: 280
+depth: 5
+omega_0: 30
+bias: True
+model_type: rff_enc
+embed_width: 726
+activation_type: silu
+outerlin: False
+swa_mult: 0 # multiplier for Stochastic Weight Averaging
+use_checkpoint: False
+checkpoint_dir: ${paths.repo}/checkpoints

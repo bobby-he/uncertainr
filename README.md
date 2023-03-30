@@ -60,15 +60,15 @@ The folders are organized as follows:
 ### Usage
 To start training an UINRs with [MCDropout](https://arxiv.org/abs/1506.02142) on [AAPM](https://www.aapm.org/grandchallenge/lowdosect/):
 ```
-python experiment_scripts/run_uncertainr.py uncertainty=mc_dropout reg.coeff=0.2 model.omega_0=48 num_epochs=15000 data.test_set=True
+python experiment_scripts/run_uncertainr.py uncertainty=mc_dropout reg.coeff=0.008 model.omega_0=40 num_epochs=15000 data.test_set=True
 ```
-which should take around an hour to run on an 12GB NVIDIA GeForce_GTX_2080Ti GPU.
+which should take around an hour to run on an 12GB NVIDIA GeForce_GTX_2080Ti GPU. 
 
 To start running inference on an UINR with HMC in [NumPyro](https://github.com/pyro-ppl/numpyro) on [AAPM](https://www.aapm.org/grandchallenge/lowdosect/):
 ```
-python experiment_scripts/run_hmc_numpyro.py uncertainty=hmc model.width=200 model.depth=4 reg.coeff=0.03 model.use_checkpoint=True data.test_set=True uncertainty.num_samples=500
+python experiment_scripts/run_hmc_numpyro.py uncertainty=hmc model.width=200 model.depth=4 reg.coeff=0.03 model.omega_0=60 model.use_checkpoint=True data.test_set=True uncertainty.num_samples=500
 ```
-which should take around 10 hours to run on an 24GB NVIDIA Titan RTX GPU.
+which should take around 10 hours to run on an 24GB NVIDIA Titan RTX GPU. These hyperparameters are tuned and match those found in Table 8 of our paper.
 
 ## Project Overview
 

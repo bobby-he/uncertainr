@@ -1,6 +1,6 @@
 # UncertaINR: Uncertainty Quantification of End-to-End Implicit Neural Representations for Computed Tomography
 
-[Francisca Vasconcelos](https://scholar.google.com/citations?user=J-bL83kAAAAJ&hl=en)\*<sup>1,2</sup>,
+[Francisca Vasconcelos](https://franciscavasconcelos.github.io/)\*<sup>1,2</sup>,
 [Bobby He](https://bobby-he.github.io/)\*<sup>1</sup>,
 [Nalini Singh](https://nalinimsingh.com/)<sup>3</sup>,
 [Yee Whye Teh](https://www.stats.ox.ac.uk/~teh/)<sup>1</sup><br>
@@ -8,7 +8,7 @@
 
 Published in the *Transactions on Machine Learning Research* (April 2023).
 
-### [Paper](https://arxiv.org/abs/2202.10847) | [Talk](https://arxiv.org/abs/2202.10847) | [Slides](https://docs.google.com/presentation/d/1p8BiarRbX4bCV1jdgrylJrAEPtLS27StNtSvQcf4C0s/edit#slide=id.gfd1a964876_0_19) | [OpenReview](https://openreview.net/forum?id=jdGMBgYvfX)
+### [Paper](https://arxiv.org/abs/2202.10847) | [Talk](https://www.youtube.com/watch?v=cD7Wx4F_EjQ) | [Slides](https://docs.google.com/presentation/d/1p8BiarRbX4bCV1jdgrylJrAEPtLS27StNtSvQcf4C0s/edit#slide=id.gfd1a964876_0_19) | [OpenReview](https://openreview.net/forum?id=jdGMBgYvfX)
 
 ---
 
